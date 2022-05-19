@@ -7,4 +7,9 @@ RUN pip3 install -U organize-tool
 
 COPY        scripts/entrypoint.sh /
 RUN         chmod +x /entrypoint.sh
+
+RUN useradd -ms /bin/bash pi
+USER pi
+WORKDIR /home/pi
+
 ENTRYPOINT  ["/entrypoint.sh"]

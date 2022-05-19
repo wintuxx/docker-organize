@@ -1,0 +1,13 @@
+version: '3'
+services: 
+  docker-organize:
+    image: docker-organize:latest
+    container_name: organize
+    environment:
+      - PUID=1000
+      - PGID=1000
+    volumes:
+      - /Pfad zur Ausgabe:/Output
+      - /Pfad zur Eingabe:/Input
+      - /Pfad zu den logs:/var/log/organize/
+      - /Pfad zur config/:/home/pi/.config/organize/

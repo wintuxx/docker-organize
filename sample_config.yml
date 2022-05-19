@@ -1,0 +1,16 @@
+rules:
+ - locations:
+      - /Input/
+    filters:
+      - extension:
+          - txt
+          - doc
+          - pdf
+          - docx
+      - name:   
+          case_sensitive: false
+      - lastmodified:
+          hours: 4
+    actions:
+      - move: '/Output/Dokumente/{extension.upper()}/'
+    subfolders: false

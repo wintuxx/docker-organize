@@ -36,3 +36,12 @@ Other sample crontab entries:
 - `0 12 1 * *` - Noon on the first day of every month
 
 More configurations can be generated at [Crontab Guru](https://crontab.guru/#0_*_*_*_*)
+
+# How to build
+```
+sudo docker build -t docker-organize .
+```
+or
+``` 
+docker build -t docker-organize .
+```

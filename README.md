@@ -37,7 +37,7 @@ Other sample crontab entries:
 
 More configurations can be generated at [Crontab Guru](https://crontab.guru/#0_*_*_*_*)
 
-# How to build
+# How to build the image
 First clone the respotory. Go in the directory.
 
 ```

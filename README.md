@@ -10,7 +10,7 @@ A Dockerized version of the file management utility [Organize](https://github.co
 ## Single Run Example
 ```
 docker run -it
-	-v "/path/to/config/":/root/.config/organize/
+	-v "/path/to/config/":/home/pi/.config/organize/ 
 	-v "/path/to/logs/":/var/log/organize/
 	-v "/source-folder/":/source
 	-v "/destination-folder/":/destination
@@ -20,7 +20,7 @@ docker run -it
 ## CRONTAB Example
 ```
 docker run -dit --rm --name docker-organize
-	-v "/path/to/config/":/root/.config/organize/
+	-v "/path/to/config/":/home/pi/.config/organize/ 
 	-v "/path/to/logs/":/var/log/organize/
 	-v "/source-folder/":/source
 	-v "/destination-folder/":/destination
